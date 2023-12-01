@@ -6,7 +6,6 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.Id;
 
 import java.time.OffsetDateTime;
-import java.time.ZonedDateTime;
 import java.util.List;
 
 @Entity
@@ -22,4 +21,6 @@ public class TripEntity {
     private OffsetDateTime endDateTime;
 
     private List<TripDestinationEntity> destinations;
+
+    private List<CommentEntity> comments;
 }

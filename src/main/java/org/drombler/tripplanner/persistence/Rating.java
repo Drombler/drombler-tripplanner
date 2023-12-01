@@ -2,9 +2,8 @@ package org.drombler.tripplanner.persistence;
 
 import jakarta.persistence.Embeddable;
 
-import java.time.LocalDate;
-
 @Embeddable
-public class ChildEmbeddable {
-    private LocalDate dateOfBirth;
+public class Rating {
+    // INTERESSTING, MAYBE; MUST,...
+    // by xy
 }

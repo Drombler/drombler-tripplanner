@@ -10,5 +10,5 @@ public class TravelGroupEntity {
 
     private String name;
     private Integer numAdults;
-    private List<ChildEmbeddable> children;
+    private List<Child> children;
 }
