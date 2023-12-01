@@ -5,6 +5,10 @@ import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import jakarta.persistence.Id;
 
+import java.time.OffsetDateTime;
+import java.time.ZonedDateTime;
+import java.util.List;
+
 @Entity
 public class TripEntity {
     @Id
@@ -13,4 +17,9 @@ public class TripEntity {
 
     @Enumerated(EnumType.STRING)
     private TripStatus status;
+
+    private OffsetDateTime startDateTime;
+    private OffsetDateTime endDateTime;
+
+    private List<TripDestinationEntity> destinations;
 }
